@@ -9,7 +9,7 @@ Requirements:
  - 6. Flagged tiles (flag and unflag)
 7. Ability to choose a tile
 8. Clear multiple tiles
-9. Difficulty settings (easy, med, hard)
+- 9. Difficulty settings (easy, med, hard)
 10. random mine generation
 11. First click is never a bomb
 12. flags remaining
