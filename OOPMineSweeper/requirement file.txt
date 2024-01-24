@@ -5,9 +5,9 @@ Requirements:
  - 2. Mines
  - 3. Filed / unfiled tiles (numbers / no numbers)
 4. Game end (happy / sad path)
-5. Timer
+5. Timer - 
  - 6. Flagged tiles (flag and unflag)
-7. Ability to choose a tile
+7. Ability to choose a tile - 
 8. Clear multiple tiles
 - 9. Difficulty settings (easy, med, hard)
 10. random mine generation
