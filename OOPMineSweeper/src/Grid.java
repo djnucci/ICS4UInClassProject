@@ -4,13 +4,20 @@ public class Grid {
 	private int numMines, numFlagsRemaining, numUserFlags;
 	private Cell[][] playingCells;
 
-	public Grid (int width, int height) {
+	public Grid (int width, int height, int numMines) {
 		playingCells = new Cell[width][height];
+
+		for (int i = 0; i < numMines; i++) {
+			
+		}
+
 		for (int i = 0; i < playingCells.length; i++) {
 			for (int k = 0; k < playingCells[i].length; k++) {
 				playingCells[i][k] = new Cell();
 			}
 		}
+
+		
 		// populate with cells
 	}
 

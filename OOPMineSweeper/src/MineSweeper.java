@@ -7,20 +7,25 @@ public class MineSweeper {
 
     public MineSweeper(String diff) {
         difficulty = new Difficulty(diff);
-        playingGrid = new Grid(difficulty.getWidth(), difficulty.getHeight());
-        playingGrid.setNumMines(difficulty.getNumMines());
+        playingGrid = new Grid(difficulty.getWidth(), difficulty.getHeight(), difficulty.getNumMines());
         
         startTime = java.lang.System.currentTimeMillis();
     }
-    public static void main(String[] args) throws Exception {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Please enter a difficulty:");
-        MineSweeper game = new MineSweeper(scan.nextLine());
-        System.out.println(game.playingGrid);
-        System.out.println(game.playingGrid.getNumMines());
 
-        System.out.println((java.lang.System.currentTimeMillis() - game.startTime) / 1000);
-        scan.close();
+		@Override
+		public String toString() {
+			return playingGrid.toString();
+		}
+    public static void main(String[] args) throws Exception {
+			Scanner scan = new Scanner(System.in);
+			System.out.println("Please enter a difficulty:");
+			MineSweeper game = new MineSweeper(scan.nextLine());
+			scan.next();
+			do {
+				System.out.println(game);
+				System.out.println((java.lang.System.currentTimeMillis() - game.startTime) / 1000);
+			} while (false);
+			scan.close();
     }
 
     
