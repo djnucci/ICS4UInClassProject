@@ -8,7 +8,7 @@ Requirements
 5. reveal empty tiles together
 6. game end (happy / sad path)
 7. restart game
-- 8. difficulty settings
+- 8. difficulty settings (easy, medium, hard)
 - 9. timer
 10. flag count
 - 11. Grid of Cells
